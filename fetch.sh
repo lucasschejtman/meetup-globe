@@ -19,7 +19,6 @@ echo "Downloading country specific data"
 for i in "${countries[@]}"
 do
   wget -O ./countries/$i.json 'http://api.meetup.com/2/cities?&sign=true&photo-host=public&country='$i
-  echo $i
 done
 
 # Data format - [lat, lon, magnitude, lat, lon, magnitude ...]
